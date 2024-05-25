@@ -2,38 +2,42 @@
 body{
   background-repeat:no-repeat;
   background-size: cover;
-  color: cadetblue;
+  color:cadetblue;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  background-image:linear-gradient(rgb(0, 217, 255),rgb(8, 37, 165)) ;
 }
-
-    
 h1{
-    display: block;
-    padding-left: 416px;
-    padding-top: 70px;
-    font-size: 37px;
+    display: flex;
+    justify-content: center;
+    margin: 60px;
 }
 input{
-    display: block;
-    margin-left: 545px;
+    display: flex;
+    width: 200px;
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-style: none;
     padding: 30px;
-    margin-top: 130px;
 }
 button{
-    display: block;
-    margin-left: 635px;
-    margin-top: 10px;
+    display: flex;
+    width: 50px;
+    align-self: center;
     
 }
 p{
     display: flex;
-    flex-direction: column;
-    font-weight: 500;
-    margin:20 460px;
-    font-size: 20px;
-    color: black;
-    padding-bottom: 22px;
-    align-items: center;
+    justify-content: center;
+    color: rgb(3, 9, 82);
+    text-shadow: 10px;
+    font-weight: 600;
 }
+::-webkit-input-placeholder{
+    text-align: center;
+}   
