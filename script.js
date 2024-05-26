@@ -17,6 +17,7 @@ if(c==ans){
         b.textContent=("YOU ARE Wrong")
         --score
     d.textContent ="YOUR CHANCES  : " + score
+    a.value="";
 }
 if(score==0){
     alert("YOU LOST (refresh for New Game )")
