@@ -5,13 +5,23 @@
 <link rel="stylesheet" href="style.css" >
 
 </head>
-    <body > 
+
+    <body> 
+        <div class="overlay2"></div>
      <h1>Guess the Number From 1 to 10 !</h1>
      
      <input id="Number" placeholder="ENTER THE NUMBER ">
      <button onclick="ANSWER()">check</button>
-    <p id="ans">YOU ARE.......</p>
-    <p id="SCORES">YOUR Chances : 5</p>
+    <h2 id="ans">YOU ARE.......</h2>
+    <h2 id="SCORES">YOUR Chances : 5</h2>
+    <div class="popup2">
+        <h1 class="text">YOU WON 🥳</h1>
+        <button class="btn" onclick="re()">OK </button>
+    </div>
+    <div class="popup3">
+        <h1 class="text">YOU LOST ☹️</h1>
+        <button class="btn" onclick="re()">OK </button>
+    </div>
 
 <script src="script.js"></script>
     </body>
