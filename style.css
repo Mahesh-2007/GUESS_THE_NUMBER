@@ -137,21 +137,20 @@ background-color: rgb(2, 75, 59)
     h1{
         font-size: 40px;
     }
-    .popup2{
-        height: 50%;
+    .popup2{    
         width: 50%;
+        height: 14%;
         /* display: flex; */
         position: absolute;
         left: 25%;
-        top: 66%;
     }
     .popup3{
-        height: 50%;
+        height: 12%;
         width: 50%;
         /* display: flex; */
         position: absolute;
         left: 25%;
-        top: 66%;
+        top: 20%;
     }
     .btn{
         height: 50px;
