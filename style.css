@@ -15,7 +15,7 @@ body{
     font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
-  height: auto;
+  height: 0;
 }
 h1{
     display: flex;
@@ -30,15 +30,19 @@ input{
     height: 75px;
     width: 30%;
     text-align: center;
+    font-size: 50px;
 }
 button{
     display: flex;
     padding: 16px;
     margin-top: 31px;
+   
 }
 ::-webkit-input-placeholder {
     text-align: center;
+    font-size: 30px;
  }
+
  .overlay2 {
     background-color: black;
 width: 100%;
@@ -53,7 +57,7 @@ display: none;
 }
 .popup2{
     position: absolute;
-    top: 25%;
+    top: 40%;
     left: 31%;
     background-color: aqua;
     width: 33%;
@@ -75,16 +79,18 @@ display: none;
     top: 10px;
     left: 10px;
 }
-.btn{
-display: flex;
-position: absolute;
-left: 43%;
-padding: 9px 18px;
-border-radius: 10px;
-border-style:none ;
-bottom: 50px;
-color: wheat;
-background-color: rgb(2, 75, 59)
+.btn{display: flex;
+    position: absolute;
+    width: 20%;
+    top: 57%;
+    left: 41%;
+    padding: 9px 18px;
+    border-radius: 10px;
+    border-style: none;
+    bottom: 50px;
+    color: wheat;
+    background-color: rgb(2, 75, 59);
+
 }
 .popup3{
     position: absolute;
@@ -103,62 +109,36 @@ background-color: rgb(2, 75, 59)
     height: 230px;
     font-style: normal;
 }
-@media screen and (max-width: 1000px) {
-    body{
-       height: auto;
-        margin-bottom: 31px;
-    }
-
-    input{
-        width: 436px;
-        height: 183px;
+.sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    width: 100%;
+}
+@media (min-width:482px) and (max-width: 1000px)  {
+    .popup2{
         position: relative;
-        top: 185px;
-        font-size: 30px;
-    }
-    button{
-        position: relative;
-        top: 185px;
-        /* width: 118px; */
-        text-align: center;
-        padding: 32px;
-        font-size: 20px;
-    }
-    h2{
-        position: relative;
-        top: 262px;
-        font-size: 29px;
-    }
-    input::placeholder{
-        text-align: center;
-        font-size: 30px;
-
-    }
-    h1{
-        font-size: 40px;
-    }
-    .popup2{    
-        width: 50%;
-        height: 14%;
-        /* display: flex; */
-        position: absolute;
-        left: 25%;
+        left: 0;
     }
     .popup3{
-        height: 12%;
+        position: relative;
+        left: 0;
+    }
+    .text{
+        position: relative;
+        left: -21px;
+        top: -6px;
+    }}
+    @media (min-width:480px){
+     input{
         width: 50%;
-        /* display: flex; */
-        position: absolute;
-        left: 25%;
-        top: 20%;
-    }
-    .btn{
-        height: 50px;
-    }
-    .overlay2{
-        width: 100%;
-        position: absolute;
-        height: 225%;
-        top: -30px;
-    }
+        height: 114px;
+     }
+     button{
+        width: 10%;
+        height: 70px;
+        font-size: 24px;
+     }
 }
